@@ -224,119 +224,121 @@ function create_config( )
     disabled_channels = {},
     realm = {60156627},--Realms Id
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v1
+    about_text = [[Teledragon v1
 An advance Administration bot based on yagop/telegram-bot 
 
-https://github.com/SEEDTEAM/TeleSeed
+ARASH ➡dragonbot
 
 Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@seyedan25 [Manager]
+DRAGON ™
+✅✅✅✅✅
+@arash_admin_dragon
 
 Special thanks to
-awkward_potato
-Siyanew
-topkecleon
-Vamptacus
-
+DRAGON BOT
+✅✅✅✅
+✅✅✅
+✅✅
+✅
 Our channels
-@teleseedch [English]
+@teledragonch [persian]
 ]],
     help_text = [[
 Commands list :
 
+Commands list :
+✅✅✅✅✅
 !kick [username|id]
 You can also do it by reply
-
+👌
 !ban [ username|id]
 You can also do it by reply
-
+👌
 !unban [id]
 You can also do it by reply
-
+👌
 !who
 Members list
-
+⭕️
 !modlist
 Moderators list
-
+👥
 !promote [username]
 Promote someone
-
+👤
 !demote [username]
 Demote someone
-
+👤
 !kickme
-Will kick user
+Will kick user 😀🖐
 
 !about
-Group description
+Group description🔱
 
 !setphoto
-Set and locks group photo
+Set and locks group photo🖼
 
 !setname [name]
-Set group name
+Set group name〽️
 
 !rules
-Group rules
+Group rules💠
 
 !id
-return group id or user id
+return group id or user id🆔
 
 !help
-
-!lock [member|name|bots]
+🔱
+!lock [member|name|bots]🔵
 Locks [member|name|bots] 
 
-!unlock [member|name|photo|bots]
+!unlock [member|name|photo|bots]🔴
 Unlocks [member|name|photo|bots]
 
-!set rules <text>
+!set rules <text>ℹ️
 Set <text> as rules
 
-!set about <text>
+!set about <text>ℹ️
 Set <text> as about
 
-!settings
+!settings✳️
 Returns group settings
 
-!newlink
+!newlink🌐
 create/revoke your group link
 
-!link
+!link🌐
 returns group link
 
-!owner
+!owner⚫️
 returns group owner id
 
-!setowner [id]
+!setowner [id]⚪️
 Will set id as owner
 
-!setflood [value]
+!setflood [value]☑️
 Set [value] as flood sensitivity
 
-!stats
+!stats🔘
 Simple message statistics
 
-!save [value] <text>
+!save [value] <text>🔘
 Save <text> as [value]
 
-!get [value]
+!get [value]✅
 Returns text of [value]
 
 !clean [modlist|rules|about]
-Will clear [modlist|rules|about] and set it to nil
+Will clear [modlist|rules|about] and set it to nil〽️
 
-!res [username]
+!res [username]☣
 returns user id
 "!res @username"
 
-!log
+!log☢
 will return group logs
 
-!banlist
+!banlist☯
 will return group ban list
 
 **U can use both "/" and "!" 
