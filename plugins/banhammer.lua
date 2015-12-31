@@ -121,7 +121,7 @@ end
 local function run(msg, matches)
  if matches[1]:lower() == 'id' then
     if msg.to.type == "user" then
-      return "Bot ID: "..msg.to.id.. "\n\nYour ID: "..msg.from.id
+      return "novinBot ID: "..msg.to.id.. "\n\nYour ID: "..msg.from.id
     end
     if type(msg.reply_id) ~= "nil" then
       local name = user_print_name(msg.from)
@@ -294,21 +294,21 @@ end
 
 return {
   patterns = {
-    "^[@#$%&-+()=*?\bB!/]([Bb]anall) (.*)$",
-    "^[@#$%&-+()=*?\bB!/]([Bb]anall)$",
-    "^[@#$%&-+()=*?\bB!/]([Bb]anlist) (.*)$",
-    "^[@#$%&-+()=*?\bB!/]([Bb]anlist)$",
-    "^[@#$%&-+()=*?\gG!/]([Gg]banlist)$",
-    "^[@#$%&-+()=*?\bB!/]([Bb]an) (.*)$",
-    "^[@#$%&-+()=*?\kK!/]([Kk]ick)$",
-    "^[@#$%&-+()=*?\uU!/]([Uu]nban) (.*)$",
-    "^[@#$%&-+()=*?\uU!/]([Uu]nbanall) (.*)$",
-    "^[@#$%&-+()=*?\uU!/]([Uu]nbanall)$",
-    "^[@#$%&-+()=*?\kK!/]([Kk]ick) (.*)$",
-    "^[@#$%&-+()=*?\kK!/]([Kk]ickme)$",
-    "^[@#$%&-+()=*?\bB!/]([Bb]an)$",
-    "^[@#$%&-+()=*?\uU!/]([Uu]nban)$",
-    "^[@#$%&-+()=*?\iI!/]([Ii]d)$",
+    "^[#?!/]([Bb]anall) (.*)$",
+    "^[#?!/]([Bb]anall)$",
+    "^[#?!/]([Bb]anlist) (.*)$",
+    "^[#?!/]([Bb]anlist)$",
+    "^[#?!/]([Gg]banlist)$",
+    "^[#?!/]([Bb]an) (.*)$",
+    "^[#?!/]([Kk]ick)$",
+    "^[#?!/]([Uu]nban) (.*)$",
+    "^[#?!/]([Uu]nbanall) (.*)$",
+    "^[#?!/]([Uu]nbanall)$",
+    "^[#?!/]([Kk]ick) (.*)$",
+    "^[#?!/]([Kk]ickme)$",
+    "^[#?!/]([Bb]an)$",
+    "^[#?!/]([Uu]nban)$",
+    "^[#?!/]([Ii]d)$",
     "^!!tgservice (.+)$",
   },
   run = run,
