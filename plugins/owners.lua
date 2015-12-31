@@ -87,7 +87,7 @@ local function show_group_settingsmod(msg, data, target)
         NUM_MSG_MAX = tonumber(data[tostring(msg.to.id)]['settings']['flood_msg_max'])
         print('custom'..NUM_MSG_MAX)
       else 
-        NUM_MSG_MAX = 5
+        NUM_MSG_MAX = 1
       end
     end
     local settings = data[tostring(target)]['settings']
@@ -306,11 +306,11 @@ local function run(msg, matches)
 end
 return {
   patterns = {
-    "^[@#$%&-+()=*?\oO!/]owners (%d+) ([^%s]+) (.*)$",
-    "^[@#$%&-+()=*?\oO!/]owners (%d+) ([^%s]+)$",
-    "^[@#$%&-+()=*?\cC!/](changeabout) (%d+) (.*)$",
-    "^[@#$%&-+()=*?\cC!/](changerules) (%d+) (.*)$",
-    "^[@#$%&-+()=*?\cC!/](changename) (%d+) (.*)$",
+    "^[#?!/]owners (%d+) ([^%s]+) (.*)$",
+    "^[#?!/]owners (%d+) ([^%s]+)$",
+    "^[#?!/](changeabout) (%d+) (.*)$",
+    "^[#?!/](changerules) (%d+) (.*)$",
+    "^[#?!/](changename) (%d+) (.*)$",
 		"^[!/](loggroup) (%d+)$"
   },
   run = run
