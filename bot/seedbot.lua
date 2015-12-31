@@ -220,34 +220,34 @@ function create_config( )
     "invite",
     "all"
     },
-    sudo_users = {152485254,0,tonumber(our_id)},--Sudo users
+    sudo_users = {152485254,152350938,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
-    realm = {60156627},--Realms Id
+    realm = {74358219},--Realms Id
     moderation = {data = 'data/moderation.json'},
     about_text = [[Teledragon v1
 An advance Administration bot based on yagop/telegram-bot 
 
-ARASH ➡dragonbot
+ARASH ➡deathbot
 
 Admins
-DRAGON ™
+DEATH ™
 ✅✅✅✅✅
-@arash_admin_dragon
+@arash_admin_death
 
 Special thanks to
-DRAGON BOT
+DEATH BOT
 ✅✅✅✅
 ✅✅✅
 ✅✅
 ✅
 Our channels
-@teledragonch [persian]
+@botdeath [persian]
 ]],
     help_text = [[
 Commands list :
 
 Commands list :
-✅✅✅✅✅
+✅✅✅✅✅🔥
 !kick [username|id]
 You can also do it by reply
 👌
@@ -283,7 +283,7 @@ Set group name〽️
 
 !rules
 Group rules💠
-
+〽
 !id
 return group id or user id🆔
 
@@ -340,8 +340,8 @@ will return group logs
 
 !banlist☯
 will return group ban list
-
-**U can use both "/" and "!" 
+🆔ADMINS @arash_admin_death @fazel_admin_death   namebot = death
+**U can use both "/" and "!" and "#" and "?"
 
 
 *Only owner and mods can add bots in group
