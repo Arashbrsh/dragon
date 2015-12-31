@@ -103,7 +103,7 @@ local function show_group_settingsmod(msg, data, target)
         	NUM_MSG_MAX = tonumber(data[tostring(msg.to.id)]['settings']['flood_msg_max'])
         	print('custom'..NUM_MSG_MAX)
       	else 
-        	NUM_MSG_MAX = 5
+        	NUM_MSG_MAX = 1
       	end
     end
     local bots_protection = "Yes"
@@ -838,28 +838,28 @@ local function run(msg, matches)
 end
 return {
   patterns = {
-  "^[@#$%&-+()=*?\.aA!/](add)$",
-  "^[@#$%&-+()=*?\.rR!/](rem)$",
-  "^[@#$%&-+()=*?\.rR!/](rules)$",
-  "^[@#$%&-+()=*?\.aA!/](about)$",
-  "^[@#$%&-+()=*?\.sS!/](setname) (.*)$",
-  "^[@#$%&-+()=*?\.sS!/](setphoto)$",
-  "^[@#$%&-+()=*?\pP!/](promote) (.*)$",
-  "^[@#$%&-+()=*?\hH!/](help)$",
-  "^[@#$%&-+()=*?\cC!/](clean) (.*)$",
-  "^[@#$%&-+()=*?\dD!/](demote) (.*)$",
-  "^[@#$%&-+()=*?\sS!/](set) ([^%s]+) (.*)$",
-  "^[@#$%&-+()=*?\lL!/](lock) (.*)$",
-  "^[@#$%&-+()=*?\sS!/](setowner) (%d+)$",
-  "^[@#$%&-+()=*?\oO!/](owner)$",
-  "^[@#$%&-+()=*?\rR!/](res) (.*)$",
-  "^[@#$%&-+()=*?\sS!/](setgpowner) (%d+) (%d+)$",-- (group id) (owner id)
-  "^[@#$%&-+()=*?\uU!/](unlock) (.*)$",
-  "^[@#$%&-+()=*?\sS!/](setflood) (%d+)$",
-  "^[@#$%&-+()=*?\sS!/](settings)$",
-  "^[@#$%&-+()=*?\mM!/](modlist)$",
-  "^[@#$%&-+()=*?\nN!/](newlink)$",
-  "^[@#$%&-+()=*?\lL!/](link)$",
+  "^[#?!/](add)$",
+  "^[#?!/](rem)$",
+  "^[#?!/](rules)$",
+  "^[#?!/](about)$",
+  "^[#?!/](setname) (.*)$",
+  "^[#?!/](setphoto)$",
+  "^[#?!/](promote) (.*)$",
+  "^[#?!/](help)$",
+  "^[#?!/](clean) (.*)$",
+  "^[#?!/](demote) (.*)$",
+  "^[#?!/](set) ([^%s]+) (.*)$",
+  "^[#?!/](lock) (.*)$",
+  "^[#?!/](setowner) (%d+)$",
+  "^[#?!/](owner)$",
+  "^[#?!/](res) (.*)$",
+  "^[#?!/](setgpowner) (%d+) (%d+)$",-- (group id) (owner id)
+  "^[#?!/](unlock) (.*)$",
+  "^[#?!/](setflood) (%d+)$",
+  "^[#?!/](settings)$",
+  "^[#?!/](modlist)$",
+  "^[#?!/](newlink)$",
+  "^[#?!/](link)$",
   "%[(photo)%]",
   "^!!tgservice (.+)$",
   },
