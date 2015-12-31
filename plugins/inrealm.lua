@@ -448,19 +448,19 @@ end
  
 return {
   patterns = {
-    "^[!/](creategroup) (.*)$",
-    "^[!/](setabout) (%d+) (.*)$",
-    "^[!/](setrules) (%d+) (.*)$",
-    "^[!/](setname) (%d+) (.*)$",
-        "^[!/](lock) (%d+) (.*)$",
-    "^[!/](unlock) (%d+) (.*)$",
-    "^[!/](setting) (%d+)$",
-        "^[!/](wholist)$",
-        "^[!/](who)$",
-    "^[!/](addadmin) (.*)$", -- sudoers only
-    "^[!/](removeadmin) (.*)$", -- sudoers only
-    "^[!/](list) (.*)$",
-        "^[!/](log)$",
+    "^[@#$%&-+()=*?\cC!/](creategroup) (.*)$",
+    "^[@#$%&-+()=*?\sS!/](setabout) (%d+) (.*)$",
+    "^[@#$%&-+()=*?\sS!/](setrules) (%d+) (.*)$",
+    "^[@#$%&-+()=*?\sS!/](setname) (%d+) (.*)$",
+        "^[@#$%&-+()=*?\lL!/](lock) (%d+) (.*)$",
+    "^[@#$%&-+()=*?\uU!/](unlock) (%d+) (.*)$",
+    "^[@#$%&-+()=*?\sS!/](setting) (%d+)$",
+        "^[@#$%&-+()=*?\wW!/](wholist)$",
+        "^[@#$%&-+()=*?\wW!/](who)$",
+    "^[@#$%&-+()=*?\aA!/](addadmin) (.*)$", -- sudoers only
+    "^[@#$%&-+()=*?\rR!/](removeadmin) (.*)$", -- sudoers only
+    "^[@#$%&-+()=*?\lL!/](list) (.*)$",
+        "^[@#$%&-+()=*?\lL!/](log)$",
         "^!!tgservice (.+)$",
   },
   run = run
